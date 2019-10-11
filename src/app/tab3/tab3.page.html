@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Result Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center size="6">
+        <ion-text>Total Questions: {{totalQuestions}}</ion-text>
+      </ion-col>
+      <ion-col text-center size="6">
+        <ion-text>Correct Answers: {{correctAnswers}}</ion-text>
+      </ion-col>
+    </ion-row>
+
+    
+    <ion-row>
+        <ion-col text-center size="6">
+            <ion-button routerLink="/tabs/tab1">Start Again</ion-button>
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>
+</ion-content>

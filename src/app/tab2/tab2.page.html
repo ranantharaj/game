@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Game Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center size="6">
+        <ion-text>TIMER: {{timer.displayTime}}</ion-text>
+      </ion-col>
+      <ion-col text-center size="6">
+        <ion-text>SCORE: {{currentScore}}</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <h2>Target</h2>
+        <p>{{displayTarget}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of randomNumbers">
+      <ion-col text-center size="6">
+        <ion-button (click)="addTargetValue(item)">{{item}}</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center size="6">
+        <ion-button (click)="nextQuestion()">Next</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
